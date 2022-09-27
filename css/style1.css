@@ -1,0 +1,73 @@
+.edu{
+  background-color:rgb(245, 238, 244);
+  border:3px solid white;
+  width:30%;
+  padding:30px;
+  font-style:initial;
+  font-size:large;
+}
+.lion{
+  background-color: rgb(245, 238, 244);
+  border:3px solid white;
+  width:30%;
+  padding:30px;
+  font-style:initial;
+  font-size:large;
+}
+ .sneha{
+  background-color: rgb(245, 238, 244);
+  border:3px solid white;
+  width:55%;
+  padding:30px;
+  position:absolute;
+  top: 10px;
+  left: 500px;
+  font-style: initial;
+  font-size:large;
+  }
+  .education{
+  background-color:rgb(245, 238, 244) ;
+  border:3px solid white;
+  width:55%;
+  padding: 30px;
+  margin: auto;
+  font-style: initial;
+  position:absolute;
+  left:500px;
+  top:700px;
+  }
+  h1{
+    color:rgba(42, 26, 87, 0.397);
+  }
+  h2{
+    color:gray;
+  }
+  h3{
+    color:rgb(54, 136, 90);
+  }
+  span#year{
+    background-color: rgb(167, 210, 230);
+  }
+  ul.a{
+    list-style-type: none;
+  }
+  li.a{
+    list-style-image:url('../image_files/');width:1em;
+   }
+   ul{
+    list-style-type: none;
+   }
+  .kavin{
+    color: rgb(63, 65, 65);
+    position: absolute;
+    top:52%;
+    left:25%;
+    text-shadow:50px;
+  }
+  ol{
+    list-style-type: none;
+    padding:10px;
+  }
+  .fa-solid{
+    color:gray;
+  }

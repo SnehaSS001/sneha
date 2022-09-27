@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>registration form</title> 
+        <link rel="stylesheet" type="text/css" href="css/register.css">
+    </head>
+    <body>
+       <div class="container">
+         <div class="sneha">
+            <h1>registration form</h1>
+         </div>
+         <form class="form" id="form">
+            <div class="forms">
+                <label for="firstname">firstname</label>
+                <input type="text" name="username" placeholder="firstname" id="firstname">
+                <small>error message</small>
+            </div>
+            <br>
+            <div class="forms">
+                <label for="username">username</label>
+                <input type="text" name="username" placeholder="username" id="username">
+                <small>error message</small> 
+            </div>
+            <br>
+            <div class="forms">
+                <label for="email">email</label>
+                <input type="text" name="email" placeholder="email" id="email">
+                <small>error message</small>
+            </div>
+            <br>
+            <div class="forms">
+                <label for="password">password</label>
+                <input type="text" name="password" placeholder="password" id="password">
+                <small>error message</small>
+            </div>
+            <br>
+            <div class="forms">
+                <label for="confirm password">confirm password</label>
+                <input type="text" name="confirm password" placeholder="confirm password" id="passsword2">
+                <small>error message</small>
+            </div>
+            <br>
+            <div class="forms">
+                <label for="contact number">contact number</label>
+                <input type="number" name="contact number" placeholder="contact number" id="contact">
+                <small>error message</small>
+            </div>
+            <br>
+            <button type="submit">submit</button>
+       <script>
+        const form=document.getElementById("form");
+        const firstname=document.getElementById("firstname");
+        const username=document.getElementById("username");
+        const email=document.getElementById("email");
+        const password=document.getElementById("password");
+        const confirmpassword=document.getElementById("password2");
+        const contactnumber=document.getElementById("contact");
+
+
+        form.addEventListener('submit',e=>{
+        e.preventDefault(); 
+        checkinput();
+        });
+
+
+        function checkinput(){ 
+        const firstnamevalue = firstname.value.trim();
+        const usernamevalue = username.value.trim();
+        const emailvalue = email.value.trim();
+        const passwordvalue = password.value.trim();
+        const confirmpasswordvalue = confirmpassword.value.trim();
+        const contactnumbervalue = contactnumber.value.trim();
+
+
+        if(firstnamevalue === ''){
+           seterror(firstname,'firstname cannot be blank');
+       }
+       else{
+       setsuccess(firstname); 
+       }
+       if(usernamevalue==='')
+      {
+       seterror(username,'username cannot be blank');
+      }
+      else{
+      setsuccess(username);
+     }  
+    }
+   function seterror(input,message){
+   const formcontrol = input.parentelement;
+   const small = formcontrol.queryselector('small');
+   formcontrol.classname = 'forms.error';
+   small.innertext = message;
+  }
+   function setsuccess(input,message){
+   const formcontrol=input.parentelement;
+   const small=formcontrol.queryselector('small');
+   formcontrol.classname='forms.success';
+   small.innertext=message;
+ }
+ </script>
+ </form>
+ </div>
+    </body>
+</html>

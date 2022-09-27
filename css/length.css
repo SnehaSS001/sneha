@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.conversation{
+    width: 400px;
+    height: 150px;
+    background: rgb(149, 233, 219);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3px;
+    padding:5px;
+}
+h1{
+    text-align: center;
+}
+#meters{
+    position: absolute;
+    right: 120px;
+}
+input type{
+    text-align: center;
+}

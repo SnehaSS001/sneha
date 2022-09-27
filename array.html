@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>common elements</title>
+    </head>
+    <body>
+    </body>
+    <script>
+      const array1=(A,S,D,F,G,H);
+      const array2=(A,S);
+      function findCommonElements(array1,array2){
+        for(let i=0;i<array1.length;i++){
+        for(let j=0;j<array2.length;j++){
+            if(array1[i]===array2[j]){
+            return true;
+    }
+    }  
+    }
+    return false;
+}
+document.write(findCommonElements(array1,array2));
+</script>
+</html>
