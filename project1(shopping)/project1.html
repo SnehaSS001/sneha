@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <title>my project</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <h1>shopping list</h1>
+    <form action="add" method="get">
+        <label>Add items:</label>
+        <input type="text" name="item">
+        <input id="addNeed" type="submit" value="need">
+        <input id="addHave" type="submit" value="have">
+    </form>
+    <h2>Need:</h2>
+    <ul class="list">
+        <li><input type="checkbox" name="items">milk<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">eggs<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">kitten food<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">bacon<a href="#">&#10006</a></li>
+    </ul>
+    <h2>have:</h2>
+    <ul class="list">
+        <li><input type="checkbox" name="items">steak<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">cream<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">cheese<a href="#">&#10006</a></li>
+        <li><input type="checkbox" name="items">apples<a href="#">&#10006</a></li>
+    </ul>
+
+</body>
+<script src="project1.js"></script>
+</html>

@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     background-color: azure;
     font-size: medium;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,10 +14,48 @@
     background-color: aquamarine;
     padding: 15px;
     border-radius: 30px;
+    box-shadow: inset 5px 5px 12px bisque,
+                      5px 5px 12px black;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+                 
 }
-.button{
-    display: flex;
-    border-bottom: 1px coral;
-    border-left: 1px white;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: azure;
+    box-shadow: inset -5px -5px 12px royalblue,
+                inset 5px 5px 12px black;
+    border: none;
+    border-radius: 30px;
+    color: dimgray;
+    font-size:50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+
 }
+button{
+    height: 48px;
+    width: 48px;
+    background-color: ivory;
+    box-shadow: -5px -5px 12px bisque,
+                 5px 5px 12px black;
+    border:none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;     
+              
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    box-shadow:-5px -5px 12px bisque,
+               5px 5px 12px black; 
+
+}
+
