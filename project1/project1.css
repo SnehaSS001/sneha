@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+    padding: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+form{
+    color: #3498db;
+    font-size: 22px;
+}
+input[type="text"]{
+    background-color: #f8f8f8;
+}
+#addNeed{
+    background-color: #f8f8f8;
+    color: #3498db;
+}
+#addHave{
+    background-color: #f8f8f8;
+    color: #3498db;
+}
+h1{
+    color: #4183d7;
+    font-size: 50px;
+}
+h2{
+    color: #4183d7;
+    font-size: 42px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+.list{
+    color:#555;
+    font-size: 22px;
+    padding: 0;
+    width: 500px;
+    border: 1px solid #dedede;
+}
+.list li{
+    list-style: none;
+    background-color: #f8f8f8;
+    border-bottom:1px dotted #ccc ;
+}
+li a{
+    float: right;
+    text-decoration: none;
+    color: red;
+}
